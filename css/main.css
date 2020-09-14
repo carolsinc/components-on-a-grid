@@ -19,10 +19,16 @@ header {
 
 body {
   display: grid;
-  grid-template-columns: repeat (2, 1fr);
-  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(8, 1fr);
 }
 
-body:nth-child(2) {
+.pano {
   grid-column: 1 / -1;
+  grid-row: 1 / 2;
+}
+
+.logo {
+
+  background-color: pink;
 }
