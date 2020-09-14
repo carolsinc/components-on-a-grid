@@ -1,5 +1,7 @@
 html {
   box-sizing: border-box;
+  line-height: 1.5;
+  font-family: "Patua One", sans-serif;
 }
 
 *,
@@ -18,17 +20,37 @@ header {
 }
 
 body {
+  margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: auto 6rem;
 }
 
 .pano {
   grid-column: 1 / -1;
-  grid-row: 1 / 2;
+  grid-row: 1 / 3;
 }
 
 .logo {
-
+  width: 14rem;
   background-color: pink;
+  grid-column:1/2 ;
+  grid-row: 2/3;
+  z-index: 1;
+}
+
+nav {
+  grid-column: 2 / -1;
+  grid-row: 1;
+  z-index: 2;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul li {
+  color: #fff;
+  text-decoration: none;
 }
