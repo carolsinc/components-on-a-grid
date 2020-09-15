@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
   line-height: 1.5;
-  font-family: "Patua One", sans-serif;
+  font-family: Georgia, serif;
 }
 
 *,
@@ -49,6 +49,7 @@ nav {
 ul {
   display: flex;
   justify-content: space-around;
+  font-family: "Patua One", sans-serif;
 }
 
 a {
@@ -57,4 +58,19 @@ a {
 
 h2 {
   color: #30658d;
+  font-family: "Patua One", sans-serif;
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+  "figure-1 figure-2"
+}
+
+main:nth-child(1){
+  grid-area: "figure-1"
+}
+
+main:nth-child(2){
+  grid-area: "figure-2"
 }
