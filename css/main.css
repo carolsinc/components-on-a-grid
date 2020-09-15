@@ -15,7 +15,6 @@ img {
 }
 
 header {
-  /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
 }
 
@@ -25,10 +24,11 @@ body {
   display: grid;
   background-color: #f2f1ed;
   grid-template-areas:
-  "header"
-  "main";
+    "header"
+    "main";
 }
-header {
+
+header[role="banner"] {
   grid-area: header;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -47,6 +47,7 @@ main {
   margin-right: 1rem;
   margin-bottom: 1rem;
 }
+
 .pano {
   grid-column: 1 / -1;
   grid-row: 1 / 3;
